@@ -25,25 +25,36 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Tutor</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarID">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#" id="segunda">Segunda-Feira</a>
-                        <a class="nav-link" href="#" id="terca">Terça-Feira</a>
-                        <a class="nav-link" href="#" id="quarta">Quarta-Feira</a>
-                        <a class="nav-link" href="#" id="quinta">Quinta-Feira</a>
-                        <a class="nav-link" href="#" id="sexta">Sexta-Feira</a>
-                        <a class="nav-link" href="#" id="sabado">Sábado</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="segunda">Segunda-Feira</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="terca">Terça-Feira</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="quarta">Quarta-Feira</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="quinta">Quinta-Feira</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="sexta">Sexta-Feira</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="sabado">Sábado</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
     </header>
     <div class="text-center m-4">
         <h3>Segunda-Feira</h3>
@@ -80,7 +91,8 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
     <script>
-        function treino_dia(dia) {
+        function treino_dia() {
+            dia = document.querySelector('.nav-link.active').id;
             //Importando arquivo exercicios.json 
             fetch('exercicios.json')
                 .then(response => response.json())
@@ -91,17 +103,17 @@
                     //Renomeando subtítulo com o foco do treino
                     document.querySelector('h4').innerHTML = 'Foco do treino: ' + treino.foco;
 
-                    //Carregando o card com o icone, titulo e descrição do primeiro exercício
-                    document.querySelector('.card-img-top').src = treino['1'].imagem;
-                    document.querySelector('.card-title').innerHTML = treino['1'].nome;
-                    let frase = treino['1'].series + ' séries, descanso de ' + treino['1'].descanso;
-                    document.querySelector('.card-subtitle').innerHTML = frase;
-                    document.querySelector('.card-text').innerHTML = treino['1'].descricao;
+                    //Carrega o card com os dados do primeiro exercício
+                    update_card(1);
+
+                    //Atualiza a lista de exercícios
+                    update_exercicicios();
                 })
             return treino;
         }
 
-        function update_card(dia, exercicio) {
+        function update_card(exercicio) {
+            dia = document.querySelector('.nav-link.active').id;
             fetch('exercicios.json')
                 .then(response => response.json())
                 .then(data => {
@@ -117,7 +129,8 @@
                 })
         }
 
-        function update_exercicicios(dia) {
+        function update_exercicicios() {
+            dia = document.querySelector('.nav-link.active').id;
             fetch('exercicios.json')
                 .then(response => response.json())
                 .then(data => {
@@ -136,7 +149,7 @@
                         //Adicionando evento de click nos itens da lista de exercícios
                         item.addEventListener('click', function () {
                             exercicio = this.id;
-                            update_card(dia, exercicio);
+                            update_card(exercicio);
                         })
 
                         lista.appendChild(item);
@@ -146,8 +159,7 @@
 
 
         //Recuperando dia do treino através do item active do menu
-        var dia = document.querySelector('.nav-link.active').id;
-        var treino = treino_dia(dia);
+        var treino = treino_dia();
         var exercicio = 1;
 
         function update_dia(dia) {
@@ -161,6 +173,7 @@
             botao.classList.add('active');
         }
 
+
         //Adicionando evento de click nos dias da semana
         document.querySelectorAll('.nav-link').forEach(item => {
             item.addEventListener('click', function () {
@@ -173,25 +186,24 @@
         document.querySelector('.btn-danger').addEventListener('click', function () {
             if (exercicio > 1) {
                 exercicio -= 1;
-                console.log(exercicio)
-                update_card(dia, exercicio);
+                update_card(exercicio);
             }
         })
 
         //Adicionando evento de click no botão próximo
         document.querySelector('.btn-success').addEventListener('click', function () {
             exercicio += 1;
-            update_card(dia, exercicio);
+            update_card(exercicio);
         })
 
         //Atualizando lista de exercícios
-        update_exercicicios(dia);
+        update_exercicicios();
 
         //Avançando um treino para frente caso clique na ceta para direita
         document.addEventListener('keydown', function (event) {
             if (event.key == 'ArrowRight') {
                 exercicio += 1;
-                update_card(dia, exercicio);
+                update_card(exercicio);
             }
         })
 
@@ -201,7 +213,7 @@
                 if (exercicio > 1) {
                     exercicio -= 1;
                     console.log(exercicio)
-                    update_card(dia, exercicio);
+                    update_card(exercicio);
                 }
             }
         })
@@ -212,7 +224,7 @@
                 var menu = document.querySelectorAll('.nav-link');
                 //dia ativo
                 var dia_atual = document.querySelector('.nav-link.active').id;
-                
+
                 //Recuperando o próximo dia da semana
                 var dia_proximo = '';
                 for (let i = 0; i < menu.length; i++) {
@@ -236,7 +248,7 @@
                 var menu = document.querySelectorAll('.nav-link');
                 //dia ativo
                 var dia_atual = document.querySelector('.nav-link.active').id;
-                
+
                 //Recuperando o próximo dia da semana
                 var dia_proximo = '';
                 for (let i = 0; i < menu.length; i++) {

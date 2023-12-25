@@ -68,16 +68,379 @@
             }
         },
         "terca": {
-        "foco": "Peito e Ombros",
-        "1": {
-            "nome": "Supino Reto",
-            "repeticoes": "Até a falha",
-            "series": "3",
-            "carga": "Variável",
-            "descanso": "45s",
-            "descricao": "Deite-se em um banco reto, segure a barra com as mãos afastadas na largura dos ombros e desça-a até o peito, mantendo o abdômen contraído e os pés apoiados no chão.",
-            "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/peito-supino-reto.gif"
-        }
+            "foco": "Peito e Ombros",
+            "1": {
+                "nome": "Dumbbell Press Deitado",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Deite-se de costas, segurando halteres sobre o peito. Estenda os braços para cima, passando os halteres um sobre o outro. Mantenha os braços retos e retorne à posição inicial.",
+                "imagem": "https://gymvisual.com/img/p/2/1/8/3/2/21832.gif"
+            },
+            "2": {
+                "nome": "Crossover com Polia Alta",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Posicione-se entre duas polias altas. Agarre as alças com as mãos cruzadas e dê um passo à frente. Mantenha os cotovelos levemente flexionados e puxe os braços para baixo e para frente, cruzando o corpo. Retorne à posição inicial de maneira controlada.",
+                "imagem": "https://gymvisual.com/img/p/2/5/6/3/0/25630.gif"
+            },
+            "3": {
+                "nome": "Crossover com Polia Baixa",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Fique em frente a duas polias baixas. Segure as alças com as mãos opostas e dê um passo à frente. Mantenha os braços levemente flexionados e cruze as mãos à frente do corpo, puxando as alças em direção ao centro. Volte à posição inicial de forma controlada.",
+                "imagem": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/cable-low-fly.gif"
+            },
+            "4": {
+                "nome": "Crossover com Polia Média",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Posicione-se entre duas polias médias. Segure as alças com as mãos opostas e dê um passo à frente. Mantenha os cotovelos esticados, trazendo as mãos à frente do corpo. Puxe as alças em direção ao centro e retorne à posição inicial de maneira controlada.",
+                "imagem": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/cable-middle-fly.gif"
+            },
+            "5": {
+                "nome": "Crucufixo Inverso Cruzado no Cross",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Fique na posição invertida no cross, segurando as alças cruzadas. Mantenha os braços estendidos para os lados e puxe as alças para frente, cruzando-as. Retorne à posição inicial de maneira controlada.",
+                "imagem": "https://www.ferrosports.com.br/img_external/ombro/image12.gif"
+            },
+            "6": {
+                "nome": "Elevação Lateral no Cross",
+                "repeticoes": "12",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "No cross, segure as alças com as mãos ao lado do corpo. Eleve os braços para os lados, mantendo-os estendidos, até a altura dos ombros. Desça os braços de forma controlada. ",
+                "imagem": "src/exercicios/Elevacao-Lateral-Cross.jpg"
+            },
+            "7": {
+                "nome": "Desenvolvimento Articulado",
+                "repeticoes": "12",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Sente-se ou fique em pé, segurando um haltere em cada mão ao nível dos ombros. Estenda os braços para cima, elevando os halteres sobre a cabeça. Retorne à posição inicial de maneira controlada",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/desenvolvimento-para-ombros-com-halteres.gif"
+            },
+            "8": {
+                "nome": "Elevação de Panturrilha em pé",
+                "repeticoes": "12",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Em pé no aparelho, coloque as pontas dos pés na plataforma e os ombros sob os apoios. Levante os calcanhares contraindo as panturrilhas. Desça os calcanhares de forma controlada.",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/03/Panturrilha-em-pe-no-aparelho.gif"
+            }
+        },
+        "quarta": {
+            "foco": "Pernas",
+            "1": {
+                "nome": "Agachamento Barra Guiada",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/agachamento-smith.gif"
+            },
+            "2": {
+                "nome": "Afundo Barra Guiada",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/agachamento-afundo-com-barra.gif"
+            },
+            "3": {
+                "nome": "Mesa Extensora",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/11/lever-leg-extension.gif"
+            },
+            "4": {
+                "nome": "Mesa Flexora",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://i.pinimg.com/originals/0c/51/de/0c51de835d14a8a3563651b5258ff2e2.gif"
+            },
+            "5": {
+                "nome": "Flexora em Pé",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://j.gifs.com/yAP0Wx.gif"
+            },
+            "6": {
+                "nome": "Cadeira Adutora",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://grandeatleta.com.br/wp-content/uploads/2018/05/cadeira-adutora-execucao.gif"
+            },
+            "7": {
+                "nome": "Cadeira Abdutora",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/04/pernas-abducao-de-pernas-na-maquina.gif"
+            },
+            "8": {
+                "nome": "Elevação Pélvica",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://miro.medium.com/v2/resize:fit:720/1*rLpKJBWLbA-E-SmBSGsP2Q.gif"
+            }
+        },
+        "quinta": {
+            "foco": "Bíceps e Tríceps",
+            "1": {
+                "nome": "Rosca Concentrada",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://newlife.com.cy/wp-content/uploads/2019/11/04031301-Dumbbell-Seated-Revers-grip-Concentration-Curl_Forearms_360.gif"
+            },
+            "2": {
+                "nome": "Rosca Scott",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/biceps-rosca-biceps-no-banco-scott-com-barra-W.gif"
+            },
+            "3": {
+                "nome": "Rosca Martelo",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://i.pinimg.com/originals/60/6d/2a/606d2a9068de9614d2228852b53057d8.gif"
+            },
+            "4": {
+                "nome": "Triceps Corda",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/07/triceps-puxada-no-pulley.gif"
+            },
+            "5": {
+                "nome": "Triceps Testa",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/10/dumbbell-lying-triceps-extension.gif"
+            },
+            "6": {
+                "nome": "Triceps Francês",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/07/triceps-nuca-com-halter.gif"
+            },
+            "7": {
+                "nome": "Abdominal",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Deite-se de costas, dobre os joelhos e coloque as mãos atrás da cabeça. Contraia o abdômen e levante os ombros do chão, aproximando-os dos joelhos. Retorne à posição inicial controladamente.",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/04/abdominal.gif"
+            }   
+        },
+        "sexta": {
+            "foco": "Ombro e Peito",
+            "1": {
+                "nome": "Elevação Lateral no Cross",
+                "repeticoes": "12",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "No cross, segure as alças com as mãos ao lado do corpo. Eleve os braços para os lados, mantendo-os estendidos, até a altura dos ombros. Desça os braços de forma controlada. ",
+                "imagem": "src/exercicios/Elevacao-Lateral-Cross.jpg"
+            },
+            "2": {
+                "nome": "Elevação Lateral",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/ombros-elevacao-lateral-de-ombros-com-halteres.gif"
+            },
+            "3": {
+                "nome": "Crucufixo Inverso Cruzado no Cross",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "Fique na posição invertida no cross, segurando as alças cruzadas. Mantenha os braços estendidos para os lados e puxe as alças para frente, cruzando-as. Retorne à posição inicial de maneira controlada.",
+                "imagem": "https://www.ferrosports.com.br/img_external/ombro/image12.gif"
+            },
+            "4": {
+                "nome": "Desenvolvimento Articulado",
+                "repeticoes": "12",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Sente-se ou fique em pé, segurando um haltere em cada mão ao nível dos ombros. Estenda os braços para cima, elevando os halteres sobre a cabeça. Retorne à posição inicial de maneira controlada",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/desenvolvimento-para-ombros-com-halteres.gif"
+            },
+            "5": {
+                "nome": "Desenvolvimento Arnold",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/ombros-desenvolvimento-arnold-para-ombros.gif"
+            },
+            "6": {
+                "nome": "Crossover com Polia Alta",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Posicione-se entre duas polias altas. Agarre as alças com as mãos cruzadas e dê um passo à frente. Mantenha os cotovelos levemente flexionados e puxe os braços para baixo e para frente, cruzando o corpo. Retorne à posição inicial de maneira controlada.",
+                "imagem": "https://gymvisual.com/img/p/2/5/6/3/0/25630.gif"
+            },
+            "7": {
+                "nome": "Crossover com Polia Baixa",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Fique em frente a duas polias baixas. Segure as alças com as mãos opostas e dê um passo à frente. Mantenha os braços levemente flexionados e cruze as mãos à frente do corpo, puxando as alças em direção ao centro. Volte à posição inicial de forma controlada.",
+                "imagem": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/cable-low-fly.gif"
+            },
+            "8": {
+                "nome": "Crossover com Polia Média",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Posicione-se entre duas polias médias. Segure as alças com as mãos opostas e dê um passo à frente. Mantenha os cotovelos esticados, trazendo as mãos à frente do corpo. Puxe as alças em direção ao centro e retorne à posição inicial de maneira controlada.",
+                "imagem": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/cable-middle-fly.gif"
+            },
+            "9": {
+                "nome": "Panturrilha Sentado",
+                "repeticoes": "12",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "No cross, segure as alças com as mãos ao lado do corpo. Eleve os braços para os lados, mantendo-os estendidos, até a altura dos ombros. Desça os braços de forma controlada. ",
+                "imagem": ""
+            }
+        },
+        "sabado": {
+            "foco": "Resto",
+            "1": {
+                "nome": "Rosca Scott",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/biceps-rosca-biceps-no-banco-scott-com-barra-W.gif"
+            },
+            "2": {
+                "nome": "Rosca Martelo",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://i.pinimg.com/originals/60/6d/2a/606d2a9068de9614d2228852b53057d8.gif"
+            },
+            "3": {
+                "nome": "Triceps Corda",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/07/triceps-puxada-no-pulley.gif"
+            },
+            "4": {
+                "nome": "Triceps Testa",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "30s",
+                "descricao": "",
+                "imagem": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/10/dumbbell-lying-triceps-extension.gif"
+            },
+            "5": {
+                "nome": "Puxador Frontal",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Puxar a barra até o peito, mantendo o tronco ereto e o abdômen contraído.",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/costas-puxada-aberta-com-barra-no-pulley.gif"
+            },
+            "6": {
+                "nome": "Remada Máquina - Aberta",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Inicie aproximando as escápulas e, em seguida, execute o movimento de remada, combinando-o com a flexão dos cotovelos.",
+                "imagem": "src/exercicios/Remada-maquina.gif"
+            },
+            "7": {
+                "nome": "Mesa Extensora",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/11/lever-leg-extension.gif"
+            },
+            "8": {
+                "nome": "Flexora em Pé",
+                "repeticoes": "12",
+                "series": "4",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "",
+                "imagem": "https://j.gifs.com/yAP0Wx.gif"
+            }
         }
     }
 }
