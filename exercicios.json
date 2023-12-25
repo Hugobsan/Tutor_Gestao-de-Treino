@@ -1,0 +1,83 @@
+{
+    "name": "Exercícios",
+    "exercicios": {
+        "segunda": {
+            "foco": "Costas",
+            "1": {
+                "nome": "Puxador Frontal",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Puxar a barra até o peito, mantendo o tronco ereto e o abdômen contraído.",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/costas-puxada-aberta-com-barra-no-pulley.gif"
+            },
+            "2": {
+                "nome": "Remada Baixa",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Posicionar o banco com o triâgulo na altura dos pés, sentar e puxar o triângulo até o abdômen, mantendo o tronco ereto e o abdômen contraído.",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/09/remada-sentado-com-cabos-e-triangulo-para-costas.gif"
+            },
+            "3": {
+                "nome": "Remada Cavalo",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Posicione a barra em um suporte ou na parede, ajuste a postura com os pés afastados e joelhos flexionados. Segure a barra abaixo da anilha, estique os braços e, ao levantá-la em direção ao peito, contraia os músculos das costas e abdômen. Mantenha a estabilidade durante o movimento, retorne à posição inicial e repita, podendo usar uma alça em 'V' para uma pegada mais confortável.",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/costas-remada-em-pe-com-barra-T.gif"
+            },
+            "4": {
+                "nome": "Remada Máquina - Aberta",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Inicie aproximando as escápulas e, em seguida, execute o movimento de remada, combinando-o com a flexão dos cotovelos.",
+                "imagem": "src/exercicios/Remada-maquina.gif"
+            },
+            "5": {
+                "nome": "Remada Serrote",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Adote uma postura estável com um joelho e uma mão apoiados em um banco, mantendo a coluna alinhada e o abdômen contraído. Puxe o halter em direção ao tronco, movendo o cotovelo para cima e para trás, e desça controladamente.",
+                "imagem": "https://static.wixstatic.com/media/2edbed_cf8feb6f79494833b887104bc358843d~mv2.gif"
+            },
+            "6": {
+                "nome": "Remada curvada com barra e pegada pronada",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Ajuste o peso desejado na barra e posicione-se com pés afastados e alinhados aos ombros. Incline o tronco para frente, segurando a barra pronada. Contrai o abdômen, abre o peito e puxe a barra em direção ao peito ao expirar. Mantenha o movimento controlado, mantendo o tronco estável a cerca de 45 graus do chão.",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/costas-remada-curvada-.gif"
+            },
+            "7": {
+                "nome": "Abdominal",
+                "repeticoes": "Até a falha",
+                "series": "3",
+                "carga": "Variável",
+                "descanso": "45s",
+                "descricao": "Deite-se de costas, dobre os joelhos e coloque as mãos atrás da cabeça. Contraia o abdômen e levante os ombros do chão, aproximando-os dos joelhos. Retorne à posição inicial controladamente.",
+                "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/04/abdominal.gif"
+            }
+        },
+        "terca": {
+        "foco": "Peito e Ombros",
+        "1": {
+            "nome": "Supino Reto",
+            "repeticoes": "Até a falha",
+            "series": "3",
+            "carga": "Variável",
+            "descanso": "45s",
+            "descricao": "Deite-se em um banco reto, segure a barra com as mãos afastadas na largura dos ombros e desça-a até o peito, mantendo o abdômen contraído e os pés apoiados no chão.",
+            "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/peito-supino-reto.gif"
+        }
+        }
+    }
+}
