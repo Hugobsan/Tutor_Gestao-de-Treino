@@ -102,7 +102,7 @@
                 // Criando variável com o treino do dia
                 var treino = data.exercicios[dia];
 
-                console.log(treino)
+                // console.log(treino)
 
                 // Renomeando subtítulo com o foco do treino
                 document.querySelector('h4').innerHTML = 'Foco do treino: ' + treino.foco;
@@ -180,6 +180,36 @@
             update_exercicicios(dia);
         }
 
+        //Armazenando o dia de hoje como dia da semana
+        var dia = new Date().getDay();
+
+        //Convertendo o dia da semana para o nome do dia
+        switch (dia) {
+            case 0:
+                dia = 'domingo';
+                break;
+            case 1:
+                dia = 'segunda';
+                break;
+            case 2:
+                dia = 'terca';
+                break;
+            case 3:
+                dia = 'quarta';
+                break;
+            case 4:
+                dia = 'quinta';
+                break;
+            case 5:
+                dia = 'sexta';
+                break;
+            case 6:
+                dia = 'sabado';
+                break;
+        }
+
+        //Atualizando o dia da semana
+        update_dia(dia);
 
         //Adicionando evento de click nos dias da semana
         document.querySelectorAll('.nav-link').forEach(item => {
@@ -206,70 +236,32 @@
         //Atualizando lista de exercícios
         update_exercicicios();
 
-        //Avançando um treino para frente caso clique na ceta para direita
-        document.addEventListener('keydown', function (event) {
-            if (event.key == 'ArrowRight') {
-                exercicio += 1;
-                update_card(exercicio);
-            }
-        })
+        // //Adicionando evento de click no nome do exercício
+        // document.querySelector('.card-title').addEventListener('click', function () {
+        //     //Convertendo o nome do exercício para input
+        //     let input = document.createElement('input')
+        //     input.value = this.innerHTML;
+        //     this.innerHTML = '';
+        //     this.appendChild(input);
+        //     input.focus();
 
-        //Voltando um treino para trás caso clique na ceta para esquerda
-        document.addEventListener('keydown', function (event) {
-            if (event.key == 'ArrowLeft') {
-                if (exercicio > 1) {
-                    exercicio -= 1;
-                    update_card(exercicio);
-                }
-            }
-        })
+        //     //Caso o usuário clique fora do input, o nome do exercício é atualizado no json
+        //     input.addEventListener('blur', function () {
+        //         let novo_nome = input.value;
+        //         this.innerHTML = novo_nome;
+        //         exercicio = document.querySelector('.card-title').innerHTML;
+        //         fetch('exercicios.json')
+        //             .then(response => response.json())
+        //             .then(data => {
+        //                 dia = document.querySelector('.nav-link.active').id;
+        //                 //criando variavel com o treino do dia
+        //                 var treino = data.exercicios[dia];
 
-        //Atualizando dia da semana caso clique na ceta para cima
-        document.addEventListener('keydown', function (event) {
-            if (event.key == 'ArrowUp') {
-                var menu = document.querySelectorAll('.nav-link');
-                //dia ativo
-                var dia_atual = document.querySelector('.nav-link.active').id;
-
-                //Recuperando o próximo dia da semana
-                var dia_proximo = '';
-                for (let i = 0; i < menu.length; i++) {
-                    if (menu[i].id == dia_atual) {
-                        console.log(i)
-                        if (i == 5) {
-                            dia_proximo = menu[0].id;
-                        } else {
-                            dia_proximo = menu[i + 1].id;
-                        }
-                    }
-                }
-
-                update_dia(dia_proximo);
-            }
-        })
-
-        //Atualizando dia da semana caso clique na ceta para baixo
-        document.addEventListener('keydown', function (event) {
-            if (event.key == 'ArrowDown') {
-                var menu = document.querySelectorAll('.nav-link');
-                //dia ativo
-                var dia_atual = document.querySelector('.nav-link.active').id;
-
-                //Recuperando o próximo dia da semana
-                var dia_proximo = '';
-                for (let i = 0; i < menu.length; i++) {
-                    if (menu[i].id == dia_atual) {
-                        if (i == 0) {
-                            dia_proximo = menu[5].id;
-                        } else {
-                            dia_proximo = menu[i - 1].id;
-                        }
-                    }
-                }
-
-                update_dia(dia_proximo);
-            }
-        })
+        //                 //Atualiza o nome do exercício no json
+        //                 treino[exercicio].nome = novo_nome;
+        //             })
+        //     })
+        // })
     </script>
 </body>
 
